@@ -6,9 +6,9 @@ import SidebarContent from './SidebarContent';
 import SidebarMenuList from './SidebarMenuList';
 import LogoNavit from '/logo-navit.jpeg';
 
-export default function Sidebar() {
+export default function SidebarMenu() {
   return (
-    <aside className="w-full h-full max-w-md bg-transparent border-0 border-r-[1px] border-border">
+    <aside className="w-1/5 h-full bg-transparent border-0 border-r-[1px] border-border bg-white dark:bg-inherit">
       <SidebarContent hasSeparator>
         <SearchBar />
       </SidebarContent>
