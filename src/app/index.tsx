@@ -1,14 +1,12 @@
-import { ModeToggle } from '@/components/ModeToggle';
-import { ThemeProvider } from '@/context/theme-provider';
+import Header from '@/components/Header';
+import Sidebar from '@/components/Sidebar';
 
 function App() {
   return (
-    <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
-      <header>
-        <ModeToggle />
-      </header>
-      <h1>Início</h1>
-    </ThemeProvider>
+    <>
+      <Header />
+      <Sidebar />
+    </>
   );
 }
 
