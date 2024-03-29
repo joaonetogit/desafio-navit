@@ -3,7 +3,7 @@ import SearchBar from '../SearchBar';
 import User from '../User';
 import { Separator } from '../ui/separator';
 import SidebarContent from './SidebarContent';
-import SidebarMenuList from './SidebarMenuList';
+import SidebarMenuList from './SidebarItem';
 import LogoNavit from '/logo-navit.jpeg';
 
 export default function SidebarMenu() {

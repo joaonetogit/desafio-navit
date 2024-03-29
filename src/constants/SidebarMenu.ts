@@ -1,4 +1,7 @@
-import { ISidebarMenuData, SidebarMenuHierarchy } from '@/types/components/SidebarMenuList';
+import {
+  ISidebarMenuData,
+  SidebarMenuHierarchy,
+} from '@/types/components/SidebarMenuList';
 
 export const SidebarMenuAdminItems: ISidebarMenuData = {
   items: [
