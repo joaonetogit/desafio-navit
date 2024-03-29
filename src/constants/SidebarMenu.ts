@@ -1,6 +1,4 @@
-import {
-  ISidebarMenuData
-} from '@/types/components/SidebarMenuList';
+import { ISidebarMenuData } from '@/types/components/SidebarMenuList';
 
 export const SidebarMenuAdminItems: ISidebarMenuData = {
   items: [
@@ -129,3 +127,48 @@ export const SidebarMenuConfig: ISidebarMenuData = {
     },
   ],
 };
+
+export const SidebarMenuExit: ISidebarMenuData = {
+  items: [
+    {
+      label: 'Sair',
+      icon: 'LogOut',
+      to: '/',
+    },
+  ],
+};
+
+export const renderContentSidebar = [
+  {
+    hierarchy: 'admin',
+    label: 'Admin',
+    items: SidebarMenuAdminItems.items,
+  },
+  {
+    hierarchy: 'competitions',
+    label: 'Competições',
+    items: SidebarMenuCompetitions.items,
+  },
+  {
+    hierarchy: 'playMore',
+    label: 'Jogue mais',
+    items: SidebarMenuPlayMore.items,
+  },
+  {
+    hierarchy: 'performance',
+    label: 'Performance',
+    items: SidebarMenuPerformance.items,
+  },
+  {
+    hierarchy: 'others',
+    items: SidebarMenuOthers.items,
+  },
+  {
+    hierarchy: 'config',
+    items: SidebarMenuConfig.items,
+  },
+  {
+    hierarchy: 'exit',
+    items: SidebarMenuExit.items,
+  },
+];

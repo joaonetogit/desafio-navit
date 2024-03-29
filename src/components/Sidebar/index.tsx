@@ -1,13 +1,7 @@
-import {
-  SidebarMenuAdminItems,
-  SidebarMenuCompetitions,
-  SidebarMenuConfig,
-  SidebarMenuOthers,
-  SidebarMenuPerformance,
-  SidebarMenuPlayMore,
-} from '@/constants/SidebarMenu';
+import { renderContentSidebar } from '@/constants/SidebarMenu';
 import SearchBar from '../SearchBar';
 import User from '../User';
+import { Separator } from '../ui/separator';
 import SidebarContent from './SidebarContent';
 import SidebarMenuList from './SidebarMenuList';
 import LogoNavit from '/logo-navit.jpeg';
@@ -21,42 +15,12 @@ export default function Sidebar() {
       <SidebarContent hasSeparator>
         <User name="Navit Digital" username="@NavitDigital" image={LogoNavit} />
       </SidebarContent>
-      <SidebarContent>
-        <SidebarMenuList
-          hierarchy="admin"
-          items={SidebarMenuAdminItems.items}
-        />
-      </SidebarContent>
-      <SidebarContent>
-        <SidebarMenuList
-          hierarchy="competitions"
-          items={SidebarMenuCompetitions.items}
-        />
-      </SidebarContent>
-      <SidebarContent>
-        <SidebarMenuList
-          hierarchy="playMore"
-          items={SidebarMenuPlayMore.items}
-        />
-      </SidebarContent>
-      <SidebarContent>
-        <SidebarMenuList
-          hierarchy="performance"
-          items={SidebarMenuPerformance.items}
-        />
-      </SidebarContent>
-      <SidebarContent>
-        <SidebarMenuList
-          hierarchy="others"
-          items={SidebarMenuOthers.items}
-        />
-      </SidebarContent>
-      <SidebarContent>
-        <SidebarMenuList
-          hierarchy="config"
-          items={SidebarMenuConfig.items}
-        />
-      </SidebarContent>
+      {renderContentSidebar.map(({ hierarchy, items, label }) => (
+        <SidebarContent key={hierarchy}>
+          <SidebarMenuList hierarchy={hierarchy} items={items} label={label} />
+        </SidebarContent>
+      ))}
+      <Separator />
     </aside>
   );
 }

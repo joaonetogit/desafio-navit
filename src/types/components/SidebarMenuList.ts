@@ -15,7 +15,8 @@ export type SidebarMenuHierarchy =
   | 'playMore'
   | 'performance'
   | 'others'
-  | 'config';
+  | 'config'
+  | 'exit';
 
 export interface ISidebarMenuItem extends ISidebarMenuData {
   hierarchy: SidebarMenuHierarchy;
@@ -28,4 +29,5 @@ export interface IBgIcon {
   performance: string;
   others: string;
   config: string;
+  exit: string;
 }

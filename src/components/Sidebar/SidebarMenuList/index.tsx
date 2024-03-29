@@ -13,11 +13,12 @@ export default function SidebarMenuList({
     performance: 'bg-yellow-500',
     others: 'bg-gray-500',
     config: 'bg-pink-500',
+    exit: 'bg-slate-400',
   };
 
   return (
-    <div>
-      {label && <h2>{label}</h2>}
+    <div className="space-y-4">
+      {label && <h2 className='uppercase font-semibold'>{label}</h2>}
       <nav className="space-y-2">
         {items &&
           items.map((item: { label: string; icon: string }) => {
@@ -25,7 +26,7 @@ export default function SidebarMenuList({
             return (
               <div key={item.label} className="flex items-center space-x-2">
                 <div
-                  className={`py-1 px-2 flex items-center justify-center rounded-md ${bgClass} text-black dark:text-white`}
+                  className={`py-1 px-3 flex items-center justify-center rounded-3xl ${bgClass} text-black dark:text-white`}
                 >
                   <Icon name={item.icon} className="text-white" />
                 </div>
