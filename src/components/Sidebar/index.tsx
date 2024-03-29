@@ -8,7 +8,7 @@ import LogoNavit from '/logo-navit.jpeg';
 
 export default function Sidebar() {
   return (
-    <aside className="w-full h-full max-w-md bg-transparent border-0 border-r-[1px] border-gray-200">
+    <aside className="w-full h-full max-w-md bg-transparent border-0 border-r-[1px] border-border">
       <SidebarContent hasSeparator>
         <SearchBar />
       </SidebarContent>

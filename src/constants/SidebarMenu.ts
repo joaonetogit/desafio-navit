@@ -1,4 +1,4 @@
-import { ISidebarMenuData } from '@/types/components/SidebarMenuList';
+import { ISidebarMenuData, SidebarMenuHierarchy } from '@/types/components/SidebarMenuList';
 
 export const SidebarMenuAdminItems: ISidebarMenuData = {
   items: [
@@ -140,35 +140,35 @@ export const SidebarMenuExit: ISidebarMenuData = {
 
 export const renderContentSidebar = [
   {
-    hierarchy: 'admin',
+    hierarchy: 'admin' as SidebarMenuHierarchy,
     label: 'Admin',
     items: SidebarMenuAdminItems.items,
   },
   {
-    hierarchy: 'competitions',
+    hierarchy: 'competitions' as SidebarMenuHierarchy,
     label: 'Competições',
     items: SidebarMenuCompetitions.items,
   },
   {
-    hierarchy: 'playMore',
+    hierarchy: 'playMore' as SidebarMenuHierarchy,
     label: 'Jogue mais',
     items: SidebarMenuPlayMore.items,
   },
   {
-    hierarchy: 'performance',
+    hierarchy: 'performance' as SidebarMenuHierarchy,
     label: 'Performance',
     items: SidebarMenuPerformance.items,
   },
   {
-    hierarchy: 'others',
+    hierarchy: 'others' as SidebarMenuHierarchy,
     items: SidebarMenuOthers.items,
   },
   {
-    hierarchy: 'config',
+    hierarchy: 'config' as SidebarMenuHierarchy,
     items: SidebarMenuConfig.items,
   },
   {
-    hierarchy: 'exit',
+    hierarchy: 'exit' as SidebarMenuHierarchy,
     items: SidebarMenuExit.items,
   },
 ];
