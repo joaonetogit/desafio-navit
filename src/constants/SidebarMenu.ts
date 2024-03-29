@@ -1,141 +1,131 @@
-import { ISidebarMenuList } from '@/types/components/SidebarMenuList';
+import {
+  ISidebarMenuData
+} from '@/types/components/SidebarMenuList';
 
-export const SidebarMenuAdmin: ISidebarMenuList[] = [
-  {
-    items: [
-      {
-        label: 'Página Inicial',
-        icon: 'dashboard',
-        to: '/',
-      },
-      {
-        label: 'Meu Perfil',
-        icon: 'dashboard',
-        to: '/',
-      },
-      {
-        label: 'Notificações',
-        icon: 'dashboard',
-        to: '/',
-      },
-      {
-        label: 'Painel de Jogos',
-        icon: 'dashboard',
-        to: '/',
-      },
-      {
-        label: 'Pagamentos',
-        icon: 'dashboard',
-        to: '/',
-      },
-    ],
-  },
-];
+export const SidebarMenuAdminItems: ISidebarMenuData = {
+  items: [
+    {
+      label: 'Página Inicial',
+      icon: 'Home',
+      to: '/',
+    },
+    {
+      label: 'Meu Perfil',
+      icon: 'User',
+      to: '/',
+    },
+    {
+      label: 'Notificações',
+      icon: 'Bell',
+      to: '/',
+    },
+    {
+      label: 'Painel de Jogos',
+      icon: 'Calendar',
+      to: '/',
+    },
+    {
+      label: 'Pagamentos',
+      icon: 'FileText',
+      to: '/',
+    },
+  ],
+};
 
-export const SidebarMenuCompetitions: ISidebarMenuList[] = [
-  {
-    label: 'Competições',
-    items: [
-      {
-        label: 'Meus Rankings',
-        icon: 'dashboard',
-        to: '/',
-      },
-      {
-        label: 'Meus Torneios',
-        icon: 'dashboard',
-        to: '/',
-      },
-      {
-        label: 'Encontre Torneios',
-        icon: 'dashboard',
-        to: '/',
-      },
-    ],
-  },
-];
+export const SidebarMenuCompetitions: ISidebarMenuData = {
+  label: 'Competições',
+  items: [
+    {
+      label: 'Meus Rankings',
+      icon: 'ListOrdered',
+      to: '/',
+    },
+    {
+      label: 'Meus Torneios',
+      icon: 'Trophy',
+      to: '/',
+    },
+    {
+      label: 'Encontre Torneios',
+      icon: 'Redo',
+      to: '/',
+    },
+  ],
+};
 
-export const SidebarMenuPlayMore: ISidebarMenuList[] = [
-  {
-    label: 'Jogue mais',
-    items: [
-      {
-        label: 'Minhas Aulas',
-        icon: 'dashboard',
-        to: '/',
-      },
-      {
-        label: 'Agende uma Aula',
-        icon: 'dashboard',
-        to: '/',
-      },
-      {
-        label: 'Agende sua Reposição',
-        icon: 'dashboard',
-        to: '/',
-      },
-      {
-        label: 'Alugue uma Quadra',
-        icon: 'dashboard',
-        to: '/',
-      },
-      {
-        label: 'Reserve um Horário de Clube',
-        icon: 'dashboard',
-        to: '/',
-      },
-    ],
-  },
-];
+export const SidebarMenuPlayMore: ISidebarMenuData = {
+  label: 'Jogue mais',
+  items: [
+    {
+      label: 'Minhas Aulas',
+      icon: 'GraduationCap',
+      to: '/',
+    },
+    {
+      label: 'Agende uma Aula',
+      icon: 'GraduationCap',
+      to: '/',
+    },
+    {
+      label: 'Agende sua Reposição',
+      icon: 'GraduationCap',
+      to: '/',
+    },
+    {
+      label: 'Alugue uma Quadra',
+      icon: 'Ticket',
+      to: '/',
+    },
+    {
+      label: 'Reserve um Horário de Clube',
+      icon: 'SquareUserRound',
+      to: '/',
+    },
+  ],
+};
 
-export const SidebarMenuPerformance: ISidebarMenuList[] = [
-  {
-    label: 'Desempenho',
-    items: [
-      {
-        label: 'Histórico de Jogos',
-        icon: 'dashboard',
-        to: '/',
-      },
-      {
-        label: 'Estatísticas',
-        icon: 'dashboard',
-        to: '/',
-      },
-      {
-        label: 'Head to Head',
-        icon: 'dashboard',
-        to: '/',
-      },
-    ],
-  },
-];
+export const SidebarMenuPerformance: ISidebarMenuData = {
+  label: 'Desempenho',
+  items: [
+    {
+      label: 'Histórico de Jogos',
+      icon: 'LayoutGrid',
+      to: '/',
+    },
+    {
+      label: 'Estatísticas',
+      icon: 'LineChart',
+      to: '/',
+    },
+    {
+      label: 'Head to Head',
+      icon: 'Scale',
+      to: '/',
+    },
+  ],
+};
 
-export const SidebarMenuOthers: ISidebarMenuList[] = [
-  {
-    items: [
-      {
-        label: 'Convidar Amigo',
-        icon: 'dashboard',
-        to: '/',
-      },
-      {
-        label: 'Quero ser Gestor',
-        icon: 'dashboard',
-        to: '/',
-      },
-    ],
-  },
-];
+export const SidebarMenuOthers: ISidebarMenuData = {
+  items: [
+    {
+      label: 'Convidar Amigo',
+      icon: 'Gift',
+      to: '/',
+    },
+    {
+      label: 'Quero ser Gestor',
+      icon: 'CircleUser',
+      to: '/',
+    },
+  ],
+};
 
-export const SidebarMenuConfig: ISidebarMenuList[] = [
-  {
-    items: [
-      {
-        label: 'Editar e Configurar',
-        icon: 'dashboard',
-        to: '/',
-      },
-    ],
-  },
-];
+export const SidebarMenuConfig: ISidebarMenuData = {
+  items: [
+    {
+      label: 'Editar e Configurar',
+      icon: 'Settings2',
+      to: '/',
+    },
+  ],
+};

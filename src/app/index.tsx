@@ -5,7 +5,9 @@ function App() {
   return (
     <>
       <Header />
-      <Sidebar />
+      <main>
+        <Sidebar />
+      </main>
     </>
   );
 }
