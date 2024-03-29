@@ -1,4 +1,4 @@
-import { ModeToggle } from "../ModeToggle";
+import { ModeToggle } from '../ModeToggle';
 
 export default function Header() {
   return (
@@ -6,5 +6,5 @@ export default function Header() {
       <h1 className="text-2xl">Header</h1>
       <ModeToggle />
     </header>
-  )
+  );
 }
