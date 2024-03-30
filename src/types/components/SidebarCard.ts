@@ -1,4 +1,5 @@
-export interface ISidebarCard {
+import { IChildren } from '../children';
+
+export interface ISidebarCard extends IChildren {
   label?: string;
-  children: React.ReactElement;
 }

@@ -1,4 +1,5 @@
-export interface ISidebarContent {
-  children: React.ReactElement;
+import { IChildren } from '../children';
+
+export interface ISidebarContent extends IChildren {
   hasSeparator?: boolean;
 }

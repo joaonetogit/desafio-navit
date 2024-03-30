@@ -1,14 +1,14 @@
 import { renderContentSidebar } from '@/constants/SidebarMenu';
 import SearchBar from '../SearchBar';
+import Sidebar from '../Sidebar';
 import User from '../User';
-import { Separator } from '../ui/Separator';
 import SidebarContent from './SidebarContent';
 import SidebarMenuList from './SidebarItem';
 import LogoNavit from '/logo-navit.jpeg';
 
 export default function SidebarMenu() {
   return (
-    <aside className="w-full max-w-sidebar h-full bg-transparent border-0 border-r-[1px] border-border bg-white dark:bg-inherit">
+    <Sidebar>
       <SidebarContent hasSeparator>
         <SearchBar />
       </SidebarContent>
@@ -20,7 +20,6 @@ export default function SidebarMenu() {
           <SidebarMenuList hierarchy={hierarchy} items={items} label={label} />
         </SidebarContent>
       ))}
-      <Separator />
-    </aside>
+    </Sidebar>
   );
 }

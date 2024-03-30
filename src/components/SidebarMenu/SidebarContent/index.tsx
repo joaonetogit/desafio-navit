@@ -7,7 +7,7 @@ export default function SidebarContent({
 }: ISidebarContent) {
   return (
     <div>
-      <div className="px-4 py-6">{children}</div>
+      <div className="px-3 py-6">{children}</div>
       {hasSeparator && <Separator />}
     </div>
   );

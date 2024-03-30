@@ -7,7 +7,7 @@ function App() {
   return (
     <div className="w-full">
       <Header />
-      <main className="w-full flex justify-between gap-5 bg-neutral-100 dark:bg-inherit">
+      <main className="w-full flex justify-center gap-5 bg-neutral-100 dark:bg-inherit">
         <SidebarMenu />
         <Posts />
         <SidebarInfo />

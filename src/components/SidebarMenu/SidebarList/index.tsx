@@ -11,11 +11,11 @@ export default function SidebarList({ hierarchy, items }: ISidebarMenuItem) {
           return (
             <div key={item.label} className="flex items-center space-x-2">
               <div
-                className={`py-1 px-3 flex items-center justify-center rounded-3xl ${bgClass} text-black dark:text-white`}
+                className={`py-1 px-2 flex items-center justify-center rounded-3xl ${bgClass} text-black dark:text-white`}
               >
                 <Icon name={item.icon} className="text-white" />
               </div>
-              <p>{item.label}</p>
+              <p className='text-md'>{item.label}</p>
             </div>
           );
         })}
