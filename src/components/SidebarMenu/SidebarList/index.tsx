@@ -24,7 +24,7 @@ export default function SidebarList({ hierarchy, items }: ISidebarMenuItem) {
               >
                 <Icon name={item.icon} className="text-white" />
               </div>
-              <p className="text-md text-gray-600 dark:text-gray-100">
+              <p className="text-md text-left text-gray-600 dark:text-gray-100">
                 {item.label}
               </p>
             </button>
