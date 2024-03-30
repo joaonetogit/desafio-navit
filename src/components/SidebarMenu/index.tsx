@@ -1,7 +1,7 @@
 import { renderContentSidebar } from '@/constants/SidebarMenu';
 import SearchBar from '../SearchBar';
 import User from '../User';
-import { Separator } from '../ui/separator';
+import { Separator } from '../ui/Separator';
 import SidebarContent from './SidebarContent';
 import SidebarMenuList from './SidebarItem';
 import LogoNavit from '/logo-navit.jpeg';
