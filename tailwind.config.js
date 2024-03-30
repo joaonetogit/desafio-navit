@@ -18,6 +18,10 @@ module.exports = {
       },
     },
     extend: {
+      maxWidth: {
+        sidebar: '16rem',
+        centerContent: 'calc(100% - 32rem - 6rem)',
+      },
       colors: {
         border: 'hsl(var(--border))',
         input: 'hsl(var(--input))',

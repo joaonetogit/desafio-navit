@@ -3,7 +3,7 @@ import CreatePost from '../CreatePost';
 
 export default function Posts() {
   return (
-    <div className="flex flex-col w-full flex-1 pt-3 space-y-4 max-w-[55vw]">
+    <div className="flex flex-col w-full flex-1 pt-3 space-y-4 max-w-centerContent">
       <CreatePost />
       <CardsActions />
     </div>
