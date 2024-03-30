@@ -1,3 +1,4 @@
+import Container from '@/components/Container';
 import Header from '@/components/Header';
 import Main from '@/components/Main';
 import Posts from '@/components/Posts';
@@ -8,11 +9,13 @@ function App() {
   return (
     <>
       <Header />
-      <Main>
-        <SidebarMenu />
-        <Posts />
-        <SidebarInfo />
-      </Main>
+      <Container>
+        <Main>
+          <SidebarMenu />
+          <Posts />
+          <SidebarInfo />
+        </Main>
+      </Container>
     </>
   );
 }

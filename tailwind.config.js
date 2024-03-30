@@ -19,8 +19,8 @@ module.exports = {
     },
     extend: {
       maxWidth: {
-        sidebar: '16rem',
-        centerContent: 'calc(100% - 32rem - 6rem)',
+        sidebar: '20rem',
+        centerContent: 'calc(100% - 40rem - 6rem)',
       },
       colors: {
         border: 'hsl(var(--border))',
