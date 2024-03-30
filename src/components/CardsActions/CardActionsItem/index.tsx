@@ -14,7 +14,7 @@ export default function CardActionsItem({
   return (
     <button
       type="button"
-      className="bg-white dark:bg-transparent min-w-40 p-4 flex flex-1 flex-col items-start text-left justify-between min-h-48 gap-2 h-fill"
+      className="bg-white dark:bg-transparent min-w-40 p-4 flex flex-1 flex-col items-start text-left justify-between min-h-48 gap-2 h-fill border border-border rounded-sm hover:bg-orange-200 group transition-all"
       onClick={onClick}
     >
       <div
@@ -22,7 +22,9 @@ export default function CardActionsItem({
       >
         <Icon name={icon} color="white" />
       </div>
-      <p className="text-md text-gray-500 dark:text-white">{title}</p>
+      <p className="group-hover:text-gray-700 text-md text-gray-500 dark:text-white transition-all">
+        {title}
+      </p>
     </button>
   );
 }
