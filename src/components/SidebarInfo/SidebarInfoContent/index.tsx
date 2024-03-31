@@ -14,7 +14,7 @@ export default function SidebarInfoContent({
       <div className="px-4 py-5">
         {title}
         {hasAction && (
-          <a className="text-sm text-blue-400" href={actionTo}>
+          <a className="text-xs text-blue-400" href={actionTo}>
             {actionLabel}
           </a>
         )}

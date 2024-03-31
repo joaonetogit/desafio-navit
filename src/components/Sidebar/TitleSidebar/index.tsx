@@ -2,7 +2,7 @@ import Icon from '@/components/Icon';
 import { ITitleSidebar } from '@/types/components/TitleSidebar';
 
 export default function TitleSidebar({ label, primary, icon }: ITitleSidebar) {
-  const sizeText = primary ? 'text-xl normal-case' : 'text-md uppercase';
+  const sizeText = primary ? 'text-md normal-case' : 'text-xs uppercase';
   const hasIcon = icon ? 'flex items-center gap-2' : '';
 
   return (

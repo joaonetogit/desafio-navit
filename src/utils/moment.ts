@@ -1,20 +1,37 @@
 import moment from 'moment';
 import 'moment/dist/locale/pt-br';
 
-export function formatTimeMoment(data: Date, formato: string) {
-  let mensagemFormatada = '';
-  moment.locale('pt-br');
+moment.locale('pt-br');
 
-  switch (formato) {
+const dateNow = moment();
+
+function formatTimeLastPlay(data: Date) {
+  const dateDiffence = dateNow.diff(moment(data), 'days');
+  const textDay = dateDiffence === 1 ? 'dia' : 'dias';
+  return `há ${dateDiffence} ${textDay}`;
+}
+
+function formatTimeJoined(data: Date) {
+  const dateMonth = moment(data).format('MMMM');
+  const capitalizedMonth =
+    dateMonth.charAt(0).toUpperCase() + dateMonth.slice(1);
+
+  return `em ${capitalizedMonth} de ${moment(data).format('YYYY')}`;
+}
+
+export function formatTime(data: Date, format: string) {
+  let message = '';
+
+  switch (format) {
     case 'joined':
-      mensagemFormatada = `em ${moment(data, 'DD-MM-YYYY').format('MMMM')} de ${moment(data, 'DD-MM-YYYY').format('YYYY')}`;
+      message = formatTimeJoined(data);
       break;
     case 'lastPlay':
-      mensagemFormatada = `há ${moment(data, 'DD-MM-YYYY').format('MMMM')}`;
+      message = formatTimeLastPlay(data);
       break;
     default:
-      mensagemFormatada = 'Formato não suportado';
+      message = 'Formato não suportado';
   }
 
-  return mensagemFormatada;
+  return message;
 }

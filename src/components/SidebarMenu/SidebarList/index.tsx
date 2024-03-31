@@ -16,7 +16,7 @@ export default function SidebarList({ hierarchy, items }: ISidebarMenuItem) {
             <button
               type="button"
               key={item.label}
-              className="flex items-center space-x-2"
+              className="flex items-center space-x-3"
               onClick={() => alert(`Navegação para ${item.label}`)}
             >
               <div
@@ -24,7 +24,7 @@ export default function SidebarList({ hierarchy, items }: ISidebarMenuItem) {
               >
                 <Icon name={item.icon} className="text-white" />
               </div>
-              <p className="text-md text-left text-gray-600 dark:text-gray-100">
+              <p className="text-sm text-left text-gray-600 dark:text-gray-100">
                 {item.label}
               </p>
             </button>

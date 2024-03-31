@@ -6,7 +6,7 @@ export const UserExample: IListInfoUser = {
     size: '1,75m',
     foreHand: 'Direta',
     backHand: 'Duas mãos',
-    lastPlay: new Date('01-03-2024'),
-    joined: new Date('01-01-2023'),
+    lastPlay: new Date('2024-03-15'),
+    joined: new Date('2023-01-14'),
   },
 };
