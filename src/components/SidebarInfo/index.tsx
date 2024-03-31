@@ -1,27 +1,17 @@
-import { renderContentSidebar } from '@/constants/SidebarMenu';
-import SearchBar from '../SearchBar';
 import Sidebar from '../Sidebar';
-import User from '../User';
-import { Separator } from '../ui/Separator';
-import SidebarContent from './SidebarContent';
-import SidebarMenuList from './SidebarItem';
-import LogoNavit from '/logo-navit.jpeg';
+import TitleSidebar from '../Sidebar/TitleSidebar';
+import SidebarInfoContent from './SidebarInfoContent';
 
 export default function SidebarInfo() {
   return (
     <Sidebar>
-      <SidebarContent hasSeparator>
-        <SearchBar />
-      </SidebarContent>
-      <SidebarContent hasSeparator>
-        <User name="Navit Digital" username="@NavitDigital" image={LogoNavit} />
-      </SidebarContent>
-      {renderContentSidebar.map(({ hierarchy, items, label }) => (
-        <SidebarContent key={hierarchy}>
-          <SidebarMenuList hierarchy={hierarchy} items={items} label={label} />
-        </SidebarContent>
-      ))}
-      <Separator />
+      <SidebarInfoContent
+        title={<TitleSidebar label="Suas Informações" primary icon="Users" />}
+        actionLabel="Editar e Configurar"
+        actionTo="/"
+      >
+        <p>testando children</p>
+      </SidebarInfoContent>
     </Sidebar>
   );
 }
