@@ -4,7 +4,7 @@ export interface IListInfoUser {
     size: string;
     foreHand: 'Direta' | 'Esquerda';
     backHand: 'Uma mão' | 'Duas mãos';
-    lastPlay: number;
-    joined: string;
+    lastPlay: Date;
+    joined: Date;
   };
 }
