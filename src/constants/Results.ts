@@ -17,10 +17,6 @@ export const typesLast20Games = {
   },
 };
 
-// Game -> UserRoundCheck
-// walko -> UserRoundX
-// withdrawal -> Ambulance
-
 export const last20Games = {
   won: {
     game: 15,
