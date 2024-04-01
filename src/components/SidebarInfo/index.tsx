@@ -1,6 +1,7 @@
 import { UserExample } from '@/constants/User';
 import Sidebar from '../Sidebar';
 import TitleSidebar from '../Sidebar/TitleSidebar';
+import ListFriends from './ListFriends';
 import ListInfoUser from './ListInfoUser';
 import SidebarInfoContent from './SidebarInfoContent';
 
@@ -34,7 +35,7 @@ export default function SidebarInfo() {
       </SidebarInfoContent>
 
       <SidebarInfoContent title={<TitleSidebar label="Amigos" icon="Users" />}>
-        <ListInfoUser user={UserExample.user} />
+        <ListFriends friends={UserExample.user.friends} />
       </SidebarInfoContent>
     </Sidebar>
   );
