@@ -1,5 +1,3 @@
-import { IUser } from './components/User';
-
 export interface IPost {
   post: {
     postIcon: string;
@@ -8,6 +6,6 @@ export interface IPost {
     title: string;
     date: Date;
     imagePost: string;
-    likes?: IUser[];
+    likes: string[];
   };
 }

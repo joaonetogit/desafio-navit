@@ -19,7 +19,7 @@ export default function CardPost({ post }: IPost) {
       </CardHeaderUi>
 
       <CardContentUi postImage={post.imagePost} title={post.title} />
-      <CardFooterUi image={post.userImage} username={post.userName} />
+      <CardFooterUi image={post.userImage} username={post.userName} imagesLikes={post.likes}  />
     </Card>
   );
 }

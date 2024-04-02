@@ -2,7 +2,7 @@ import ButtonsActionItem from './ButtonsActionItem';
 
 export default function ButtonsAction() {
   return (
-    <>
+    <div className="flex items-center gap-4">
       <ButtonsActionItem
         icon="ThumbsUp"
         onClick={() => alert('Click on Like')}
@@ -15,6 +15,6 @@ export default function ButtonsAction() {
         icon="Share2"
         onClick={() => alert('Click on Share')}
       />
-    </>
+    </div>
   );
 }

@@ -16,7 +16,7 @@ export default function CardHeaderUi({
         className="w-12 h-12 rounded-full border border-border"
         src={iconPost}
       />
-      <div className="space-y-1">
+      <div className="space-y-1 flex-1">
         <CardTitle className="flex gap-1">
           <div className="text-blue-500">
             <div className="inline-flex items-center">
@@ -26,7 +26,7 @@ export default function CardHeaderUi({
           </div>
         </CardTitle>
         <CardDescription className="flex flex-col gap-1">
-          {userName}
+          <span>{userName}</span>
           {formatTime(date, 'lastPlay')}
         </CardDescription>
       </div>
