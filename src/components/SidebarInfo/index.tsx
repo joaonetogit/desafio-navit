@@ -1,4 +1,5 @@
 import { UserExample } from '@/constants/User';
+import ChartLastTime from '../ChartLastTime';
 import Sidebar from '../Sidebar';
 import TitleSidebar from '../Sidebar/TitleSidebar';
 import ListFriends from './ListFriends';
@@ -31,7 +32,7 @@ export default function SidebarInfo() {
       <SidebarInfoContent
         title={<TitleSidebar label="Seus jogos nos últimos 12 meses" />}
       >
-        <ListInfoUser user={UserExample.user} />
+        <ChartLastTime />
       </SidebarInfoContent>
 
       <SidebarInfoContent title={<TitleSidebar label="Amigos" icon="Users" />}>

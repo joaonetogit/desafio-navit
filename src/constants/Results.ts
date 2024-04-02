@@ -29,3 +29,30 @@ export const last20Games = {
     withdrawal: 0,
   },
 };
+
+export const last12Month = [
+  {
+    name: 'Ago/2023',
+    value: 10,
+  },
+  {
+    value: 15,
+  },
+  {
+    value: 5,
+  },
+  {
+    name: 'Nov/2023',
+    value: 8,
+  },
+  {
+    value: 7,
+  },
+  {
+    value: 6,
+  },
+  {
+    name: 'Feb/2024',
+    value: 2,
+  },
+];
