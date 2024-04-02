@@ -4,6 +4,7 @@ import Sidebar from '../Sidebar';
 import TitleSidebar from '../Sidebar/TitleSidebar';
 import ListFriends from './ListFriends';
 import ListInfoUser from './ListInfoUser';
+import ResultLastGames from './ResultLastGames';
 import SidebarInfoContent from './SidebarInfoContent';
 
 export default function SidebarInfo() {
@@ -26,7 +27,7 @@ export default function SidebarInfo() {
       <SidebarInfoContent
         title={<TitleSidebar label="Seus resultados dos últimos 20 jogos" />}
       >
-        <ListInfoUser user={UserExample.user} />
+        <ResultLastGames />
       </SidebarInfoContent>
 
       <SidebarInfoContent

@@ -17,17 +17,24 @@ export const typesLast20Games = {
   },
 };
 
-export const last20Games = {
-  won: {
-    game: 15,
-    walko: 0,
-    withdrawal: 0,
-  },
-  loses: {
-    game: 5,
-    walko: 0,
-    withdrawal: 0,
-  },
+export const last20GamesWon: {
+  game: number;
+  walko: number;
+  withdrawal: number;
+} = {
+  game: 18,
+  walko: 0,
+  withdrawal: 0,
+};
+
+export const last20GamesLoss: {
+  game: number;
+  walko: number;
+  withdrawal: number;
+} = {
+  game: 5,
+  walko: 0,
+  withdrawal: 0,
 };
 
 export const last12Month = [

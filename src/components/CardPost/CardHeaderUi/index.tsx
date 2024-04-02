@@ -26,7 +26,7 @@ export default function CardHeaderUi({
           </div>
         </CardTitle>
         <CardDescription className="flex flex-col gap-1">
-          <div>{userName}</div>
+          {userName}
           {formatTime(date, 'lastPlay')}
         </CardDescription>
       </div>
