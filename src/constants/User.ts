@@ -3,6 +3,8 @@ import { usersFriends } from './Friends';
 
 export const UserExample: IListInfoUser = {
   user: {
+    image: '',
+    name: 'João Silva',
     gender: 'Masculino',
     size: '1,75m',
     foreHand: 'Direta',

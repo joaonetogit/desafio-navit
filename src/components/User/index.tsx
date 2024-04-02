@@ -1,13 +1,10 @@
 import { IUser } from '@/types/components/User';
-import { Avatar, AvatarFallback, AvatarImage } from '../ui/Avatar';
+import AvatarUi from '../AvatarUi';
 
 export default function User({ name, username, image }: IUser) {
   return (
     <div className="flex gap-4 items-center">
-      <Avatar>
-        <AvatarImage src={image} />
-        <AvatarFallback>{name}</AvatarFallback>
-      </Avatar>
+      <AvatarUi image={image} name={name} />
       <div>
         <h3 className="text-xl font-medium">{name}</h3>
         <p className="text-gray-500">{username}</p>

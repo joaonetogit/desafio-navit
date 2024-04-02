@@ -1,25 +1,25 @@
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardFooter,
-  CardHeader,
-  CardTitle,
-} from '../ui/Card';
+import { IPost } from '@/types/post';
 
-export default function CardPost() {
+import { Card } from '../ui/Card';
+import CardContentUi from './CardContentUi';
+import CardFooterUi from './CardFooterUi';
+import CardHeaderUi from './CardHeaderUi';
+import CardPostDropdownMenu from './CardPostDropdownMenu';
+
+export default function CardPost({ post }: IPost) {
   return (
     <Card className="rounded-sm shadow-none">
-      <CardHeader>
-        <CardTitle>Card Title</CardTitle>
-        <CardDescription>Card Description</CardDescription>
-      </CardHeader>
-      <CardContent>
-        <p>Card Content</p>
-      </CardContent>
-      <CardFooter>
-        <p>Card Footer</p>
-      </CardFooter>
+      <CardHeaderUi
+        date={post.date}
+        iconPost={post.imageThumb}
+        userName={post.userName}
+        title={post.title}
+      >
+        <CardPostDropdownMenu />
+      </CardHeaderUi>
+
+      <CardContentUi postImage={post.imagePost} title={post.title} />
+      <CardFooterUi image={post.userImage} username={post.userName} />
     </Card>
   );
 }
