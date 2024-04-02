@@ -11,7 +11,7 @@ export default function CardPost({ post }: IPost) {
     <Card className="rounded-sm shadow-none">
       <CardHeaderUi
         date={post.date}
-        iconPost={post.imageThumb}
+        iconPost={post.postIcon}
         userName={post.userName}
         title={post.title}
       >

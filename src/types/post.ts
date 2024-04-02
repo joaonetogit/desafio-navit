@@ -5,7 +5,6 @@ export interface IPost {
     postIcon: string;
     userImage: string;
     userName: string;
-    imageThumb: string;
     title: string;
     date: Date;
     imagePost: string;
