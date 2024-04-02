@@ -3,7 +3,7 @@ import Icon from '@/components/Icon';
 import { Button } from '@/components/ui/Button';
 import { CardFooter } from '@/components/ui/Card';
 import { Input } from '@/components/ui/Input';
-import ButtonsAction from '../ButtonsAction';
+import ButtonsAction from './ButtonsAction';
 
 export default function CardFooterUi({
   image,

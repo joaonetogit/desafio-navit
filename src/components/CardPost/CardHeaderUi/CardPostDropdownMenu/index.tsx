@@ -13,16 +13,16 @@ export default function CardPostDropdownMenu() {
     <div className="place-items-start">
       <DropdownMenu>
         <DropdownMenuTrigger asChild>
-          <Button variant="outline">
+          <Button variant="outline" className="p-2">
             <Icon name="ChevronDown" />
           </Button>
         </DropdownMenuTrigger>
-        <DropdownMenuContent className="w-56">
+        <DropdownMenuContent className="w-38">
           <DropdownMenuRadioGroup>
-            <DropdownMenuRadioItem value="share">
+            <DropdownMenuRadioItem className="p-2" value="share">
               Compartilhar
             </DropdownMenuRadioItem>
-            <DropdownMenuRadioItem value="report">
+            <DropdownMenuRadioItem className="p-2" value="report">
               Denunciar
             </DropdownMenuRadioItem>
           </DropdownMenuRadioGroup>

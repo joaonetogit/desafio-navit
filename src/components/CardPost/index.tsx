@@ -4,7 +4,7 @@ import { Card } from '../ui/Card';
 import CardContentUi from './CardContentUi';
 import CardFooterUi from './CardFooterUi';
 import CardHeaderUi from './CardHeaderUi';
-import CardPostDropdownMenu from './CardPostDropdownMenu';
+import CardPostDropdownMenu from './CardHeaderUi/CardPostDropdownMenu';
 
 export default function CardPost({ post }: IPost) {
   return (
