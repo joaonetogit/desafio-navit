@@ -1,37 +1,37 @@
-export const typesLast20Games = {
-  simple: {
-    won: 15,
-    loss: 5,
-  },
-  pair: {
-    won: 0,
-    loss: 0,
-  },
-  ranking: {
-    won: 4,
-    loss: 1,
-  },
-  tourney: {
-    won: 9,
-    loss: 4,
-  },
+import { ILastGames } from '@/types/constants/lastGames';
+import { ITypesLast20Games } from '@/types/constants/typesLastGame';
+
+export const typesLast20GamesSimple: ITypesLast20Games = {
+  text: 'Simples',
+  won: 15,
+  loss: 5,
 };
 
-export const last20GamesWon: {
-  game: number;
-  walko: number;
-  withdrawal: number;
-} = {
+export const typesLast20GamesPair: ITypesLast20Games = {
+  text: 'Duplas',
+  won: 0,
+  loss: 0,
+};
+
+export const typesLast20GamesRanking: ITypesLast20Games = {
+  text: 'Rankings',
+  won: 4,
+  loss: 1,
+};
+
+export const typesLast20GamesTourney: ITypesLast20Games = {
+  text: 'Torneios',
+  won: 9,
+  loss: 4,
+};
+
+export const last20GamesWon: ILastGames = {
   game: 18,
   walko: 0,
   withdrawal: 0,
 };
 
-export const last20GamesLoss: {
-  game: number;
-  walko: number;
-  withdrawal: number;
-} = {
+export const last20GamesLoss: ILastGames = {
   game: 5,
   walko: 0,
   withdrawal: 0,

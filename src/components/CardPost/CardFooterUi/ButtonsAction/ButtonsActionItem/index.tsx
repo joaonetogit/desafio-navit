@@ -12,7 +12,10 @@ export default function ButtonsActionItem({
       onClick={onClick}
     >
       <div>
-        <Icon name={icon} className="text-gray-500 group-hover:text-gray-100 group-hover:dark:text-gray-50 transition-all" />
+        <Icon
+          name={icon}
+          className="text-gray-500 group-hover:text-gray-100 group-hover:dark:text-gray-50 transition-all"
+        />
       </div>
     </Button>
   );

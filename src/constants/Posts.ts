@@ -18,7 +18,7 @@ export const PostsExample: IPost[] = [
       userImage: '/logo-navit.jpeg',
       userName: '@Nara',
       title:
-      'SF The Weekend Cup Fevereiro/Março 24 - Categoria Bronza (6° Classe)',
+        'SF The Weekend Cup Fevereiro/Março 24 - Categoria Bronza (6° Classe)',
       date: new Date('01-21-2024'),
       imagePost: '/posts/image-post-2.jpeg',
       likes: [
