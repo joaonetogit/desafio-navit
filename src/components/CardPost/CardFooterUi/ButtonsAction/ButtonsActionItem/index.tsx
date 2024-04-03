@@ -14,7 +14,7 @@ export default function ButtonsActionItem({
       <div>
         <Icon
           name={icon}
-          className="text-gray-500 group-hover:text-gray-100 group-hover:dark:text-gray-50 transition-all"
+          className="text-gray-500 dark:text-gray-200 group-hover:text-gray-100 group-hover:dark:text-gray-50 transition-all"
         />
       </div>
     </Button>
