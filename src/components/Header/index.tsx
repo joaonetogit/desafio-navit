@@ -3,7 +3,7 @@ import { ModeToggle } from '../ModeToggle';
 
 export default function Header() {
   return (
-    <header className="p-4 border-b-[1px]">
+    <header className="p-4 border-b-[1px] bg-white dark:bg-transparent">
       <Container>
         <div className="flex justify-between">
           <h1 className="text-2xl">Header</h1>
